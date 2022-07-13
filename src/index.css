@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Home Section */
+
+.home-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F7FB;
+  height: 100vh;
+}
+
+.home-title{
+  margin-bottom: 7px;
+  font-family: 'Karla', sans-serif;
+  font-size: 31px;
+  color: #293264;
+}
+
+.home-description{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #293264;
+  margin-bottom: 29px;
+}
+
+.start-button{
+  width: 193px;
+  height: 52px;
+  background: #4D5B9E;
+  border-radius: 15px;
+  border: none;
+  color: #F5F7FB;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer
+}
+
+/* Quiz Section */
+
+.quiz-main{
+  width: 100%;
+}
+
+.question-wrapper{
+  min-height: 100px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr;
+  row-gap: 4px;
+  padding: 0px;
+  margin: 0px
+}
+
+.question{
+  font-family: 'Karla';
+  font-size: 16px;
+  color: #293264;
+  padding-top: 3px;
+  padding-left: 8px;
+}
+
+.option-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.options{
+  max-width: 80px;
+  min-width: 60px;
+  min-height: 21px;
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: #293264;
+  padding: 3px
+}
+
+.options:hover{
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+.check-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-button{
+  width: 120px;
+  height: 45px;
+  background: #4D5B9E;
+  border-radius: 10px;
+  border: none;
+  color: #F5F7FB;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  margin: 20px 160px;
+  padding: 2px
+}
+
+.check-button:hover{
+  cursor: pointer;
+  transform: scale(1.1)
 }

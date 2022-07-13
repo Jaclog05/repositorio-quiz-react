@@ -15,14 +15,16 @@ export default function Quiz(){
     const questionVector = apiQuestions.map((ques, idx) => (
          <Question 
             key={idx} 
-            question={apiQuestions[idx]}
+            question={ques}
         />
     ))
     
     return(
         <main className="quiz-main">
             {questionVector}
-            <button className="check-button">Check Answers</button>
+            <div className="check-wrapper">
+                <button className="check-button">Check Answers</button>
+            </div>
         </main>
     )
 }

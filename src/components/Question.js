@@ -18,10 +18,7 @@ export default function Question({question}){
             <div className="option-wrapper">
                 {allOptionsVector}
             </div>
-                
             <hr/>
-                
-        </div>
-            
+        </div>    
     )
 }
